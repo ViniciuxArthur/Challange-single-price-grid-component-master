@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla&display=swap">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <style>
+    * {
+      font-family: 'Karla', sans-serif;
+      padding: 0px;
+      margin: 0px;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: hsl(204, 43%, 93%);
+    }
+    .bottom-divs {
+      width: 100%;
+      height: 55%;
+      display: flex;
+      flex-direction: row;
+    }
+    .bottom-divs h1{
+      color: white;
+      margin-top: 4%;
+      margin-left: 14%;
+      font-weight: 700;
+    }
+    .bottom-divs h2{
+      color: white;
+      margin-top: 10%;
+      margin-bottom: 2%; 
+      margin-left: 14%;
+    }
+    .bottom-divs p{
+      color: white;
+      margin-top: 1%; 
+      margin-left: 14%;
+      font-weight: 400;
+    }
+    .bottom-divs p1{
+      color: white;
+      margin-top: 7%; 
+      margin-left: 4%;
+      font-weight: lighter;
+    }
+    #top-div {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      width: 100%;
+      height: 45%;
+      border-radius: 10px 10px 0px 0px;
+      background-color: white;
+    }
+    #top-div h1 {
+      color: hsl(179, 62%, 43%);
+      margin-top: 4%;
+      margin-left: 7%;
+      font-weight: 700;
+    }
+    #top-div h2{
+      color: hsl(71, 73%, 54%);
+      margin-top: 2%;
+      margin-bottom: 2%; 
+      margin-left: 7%;
+    }
+    #top-div p{
+      color: hsl(218, 22%, 67%);
+      margin-top: 1%; 
+      margin-left: 7%;
+      font-weight: 400;
+    }   
+    #right-bottom-div{
+      width: 50%;
+      height: 100%;
+      border-radius: 0px 0px 10px 0px;
+      background-color:hsl(179, 61%, 48%);
+    }
+    #left-bottom-div{
+      width: 50%;
+      height: 100%;
+      border-radius: 0px 0px 0px 10px;
+      background-color: hsl(179, 62%, 43%);
+    }
+    #left-bottom-div {
+      display: flex;
+      flex-direction: column;
+    }
+    #left-bottom-div div{
+      display: flex;
+      justify-content: start;
+    }
+    .main-container {
+      width: 50%;
+      height: 75%;
+      box-shadow: 0px 0px 5px 0px rgb(175, 175, 175);
+      border-radius: 10px;
+    }
+    #left-bottom-div .div-price{
+      display: flex;
+      flex-direction: row;
+    }
+    #left-bottom-div .sign-up{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sign-up{
+      color: white;
+      width: 80%;
+      height: 20%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 0px rgb(68, 68, 68);
+      background-color: hsl(71, 73%, 54%);
+    }
+    footer{
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+    }
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%);}
+    
+  </style>
+</head>
+<body>
+  <main>
+    <div class="main-container">
+      <div id="top-div">
+        <h1>Join our community</h1>
+        <h2>30-day, hassle-free money back guarantee</h2>
+        <p> Gain access to our full library of tutorials along with expert code reviews.</p>
+        <p>Perfect for any developers who are serios aboute honing their skills.</p>
+      </div>
+
+      <div class="bottom-divs">
+        <div id="left-bottom-div">
+        <h2>Monthly subscription</h2>
+        <div class="div-price">
+        <h1 class="price">$29</h1>
+        <p1> per month</p1>
+        </div>
+        <p> Full access for less than $1 a day</p>
+        <div class="sign-up">Sign Up</div>
+        </div>
+        <div id="right-bottom-div">
+        <h2>Why Us</h2>
+        <p>Tutorials by industry experts</p>
+        <p>Perr & expert code review</p>
+        <p>Coding exercises</p>
+        <p>Access to our GitHub repos</p>
+        <p>community forum</p>
+        <p>Flascard decks</p>
+        <p>New videos every week</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Vinícius Arthur Pita</a>.
+    </p>
+  </footer>
+</body>
+</html>
